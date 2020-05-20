@@ -18,6 +18,7 @@ function ResultContainer() {
                         description={book.description}
                         image={book.image}
                         link={book.link}
+                        google_id={book.google_id}
                     />
                 )
             ) : (

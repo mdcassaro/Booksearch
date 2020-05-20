@@ -29,10 +29,11 @@ export default {
           const results = books.map(book => {
             return {
               title: book.volumeInfo.title,
-              authors: book.volumeInfo.authors ,
+              authors: book.volumeInfo.authors[0],
               description: book.volumeInfo.description,
               image: book.volumeInfo.imageLinks.thumbnail,
-              link: book.volumeInfo.infoLink
+              link: book.volumeInfo.infoLink,
+              google_id: book.id
 
             };
           });
