@@ -18,7 +18,7 @@ export default {
     return axios.post("/api/books", bookData);
   },
 
-  getBooks: function(query) {
+  getBooksQuery: function(query) {
     let queryUrl = "https://www.googleapis.com/books/v1/volumes?q=" + query + "&key=AIzaSyDeDO0-rQIayjNRH7VQKCS7YSjb709ER8U"
     return new Promise((resolve, reject) => {
       axios
@@ -41,10 +41,4 @@ export default {
     });
   },
 };
-
-
-
-
-
-
 
