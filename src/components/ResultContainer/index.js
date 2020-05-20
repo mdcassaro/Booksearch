@@ -6,7 +6,7 @@ import API from "../utils/API";
 
 
 function ResultContainer(){
-    API.getBooks("Harry Potter")
+    API.getBooksQuery("Harry Potter")
     .then(res => 
         console.log(res)
     )
