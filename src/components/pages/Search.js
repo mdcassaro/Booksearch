@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
-import ResultContainer from "../components/ResultContainer";
-import "../components/SearchForm/style.css";
+import ResultContainer from "../ResultContainer";
+import "../SearchForm/style.css";
 import API from "../utils/API";
 import BookSearch from "../utils/BookSearch";
 

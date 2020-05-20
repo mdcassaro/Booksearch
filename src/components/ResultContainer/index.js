@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "./style.css";
 import ResultCard from "../ResultCard";
-import BookContext from "../../utils/BookContext";
+import BookSearch from "../utils/BookSearch";
 
 function ResultContainer() {
-    const books = useContext(BookContext);
+    const books = useContext(BookSearch);
 
     return (
         <div className="resultContainer">
