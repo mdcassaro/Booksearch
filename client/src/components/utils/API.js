@@ -19,11 +19,12 @@ export default {
   },
 
   getBooksQuery: function(query) {
-    let queryUrl = "https://www.googleapis.com/books/v1/volumes?q=" + query + "&key=AIzaSyDeDO0-rQIayjNRH7VQKCS7YSjb709ER8U"
+    let queryUrl = "https://www.googleapis.com/books/v1/volumes?q=" + query 
     return new Promise((resolve, reject) => {
       axios
         .get(queryUrl)
         .then(res => {
+          console.log(res)
           const books = res.data.items;
           const results = books.map(book => {
             return {
